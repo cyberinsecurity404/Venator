@@ -1,0 +1,50 @@
+[
+	{
+		"name": "UniFi Video",
+		"query": "\"port:7443\" \"server: Apache-Coyote/1.1\" \"Content-Length: 2721\"",
+		"auth" : "html",
+		"url": "/login",
+		"user": "ubnt",
+		"password": "ubnt",
+		"success": "Welcome",
+		"attack": "defaultCreds",
+		"port": "7443",
+		"protocol": "https"
+	},
+	{
+		"name": "SQ-WEBCAM",
+		"query": "\"port:8080\" \"Server: SQ-WEBCAM\" \"CONTENT-LENGTH:2936\"",
+		"auth" : "html",
+		"url": "/home.htm",
+		"user": "admin",
+		"password": "admin",
+		"success": "Welcome",
+		"attack": "dictionary",
+		"port": "8080",
+		"protocol": "http"
+	},
+	{
+		"name": "NetGear",
+		"query": "\"netgear\" \"port:8443\"",
+		"auth" : "basic",
+		"url": "/home.htm",
+		"user": "admin",
+		"password": "admin",
+		"success": "",
+		"attack": "defaultCreds",
+		"port": "8443",
+		"protocol": "http"
+	},
+	{
+		"name": "Generic Telnet",
+		"query": "\"telnet\" \"port:23\"",
+		"auth" : "telnet",
+		"url": "",
+		"user": "root",
+		"password": "root",
+		"success": "",
+		"attack": "defaultCreds",
+		"port": "23",
+		"protocol": "telnet"
+	}
+]
