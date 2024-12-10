@@ -73,7 +73,7 @@ def attack_telnet(hostvictima,usuario,password):
     tn.close()
 ####################################################################
 def busqueda_shodan(busqueda):
-    api = Shodan('fimlOPtoBz5kIvqcqLdnVagjEPzJr32M')
+    api = Shodan('ENTER YOUR API KEY')
     results = api.search(busqueda)
     victimas = {}
     for item in results['matches']:
